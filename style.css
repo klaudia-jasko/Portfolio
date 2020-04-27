@@ -1,0 +1,430 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: rgb(73, 71, 97);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Girassol', cursive;
+    background-color: rgb(73, 71, 97);
+    
+}
+
+.logo{
+    color: rgb(51, 172, 253);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.logo span {
+    color:rgb(250, 213, 133);
+}
+
+.nav-links{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+   color: rgb(51, 172, 253);
+   text-decoration: none;
+   letter-spacing: 3px;
+   font-weight: bold;
+   font-size: 14px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width:25px;
+    height: 3px;
+    background-color: rgb(51, 172, 253);
+    margin: 5px;
+}
+
+.burger:hover {
+    border: solid rgb(250, 213, 133);
+    border-radius: 20%;
+    border-width: 2px;
+}
+
+a:hover {
+    border-bottom: solid rgb(228, 193, 117);
+    border-width: 2px;
+    transition: 0.2s ease-in-out;
+}
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+ 
+
+.intro {
+    background-color: rgb(73, 71, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    
+  
+  }
+
+  .intro_div {
+      box-sizing: border-box;
+      color: rgb(51, 172, 253);
+      display: block;
+      font-size: 50px;
+      font-weight: 400;
+      text-align: center;
+  }
+
+  .full_name {
+      color: rgb(250, 213, 133);
+      font-weight: 900;
+  }
+
+
+
+  .container_about{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(73, 71, 97);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+    position: reletive;
+  }
+
+  .about_heading,
+  .proj{
+      color: rgb(51, 172, 253);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      scroll-padding-top: 15px;
+      padding-bottom: 15px;
+  }
+
+  .proj span,
+  .about_heading span {
+      color: rgb(250, 213, 133)
+  }
+
+  .content_about p {
+      color: rgb(51, 172, 253);
+      text-align: justify;
+      padding: 5px;
+     
+  }
+  
+  .img_about {
+      display: flex;
+      align-items: flex-start;
+      float:left;
+      width: 28%;
+  }
+
+  .skills {
+      float: left;
+      display:flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 70%;
+     
+  }
+  .html {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      margin-bottom: 28px;
+  }
+
+  div[class^='tag-']{
+      clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+      width: 100px;
+      height: 30px;
+      background-color: rgb(51, 172, 253);
+      margin-right: 30 px;
+      margin-top: 4px;
+     
+  }
+
+  div[class^='tag-'] p {
+    text-align: left;
+    padding-left: 7px;
+    align-items: center;
+    font-size: 0.7rem;
+    padding-top: 3px;
+}
+
+  .progressbar {
+      position: relative;
+      width: 450px;
+      height: 20px;
+      border: 2px solid rgb(51, 172, 253);
+      border-radius: 20px;
+      margin-top: 7px;
+  }
+  .barhtml {
+    position: relative;
+    width: 90%;
+    height: 22px;
+    border-radius: 20px;
+    background-color: rgb(51, 172, 253);
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .barcss {
+    position: relative;
+    width: 75%;
+    height: 22px;
+    border-radius: 20px;
+    background-color: rgb(51, 172, 253);
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .barjavascript{
+    position: relative;
+    width: 80%;
+    height: 22px;
+    border-radius: 20px;
+    background-color: rgb(51, 172, 253);
+    margin-top: -1px;
+    margin-left: -1px;
+  }  
+  .barphp{
+    position: relative;
+    width: 40%;
+    height: 22px;
+    border-radius: 20px;
+    background-color: rgb(51, 172, 253);
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .bargithub {
+    position: relative;
+    width: 70%;
+    height: 22px;
+    border-radius: 20px;
+    background-color: rgb(51, 172, 253);
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+ 
+  .container_projects {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgb(73, 71, 97);
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: reletive;
+    border-top: 2px solid rgb(73, 71, 97);
+  }
+
+  .first_project {
+      display: flex;
+      margin-left: 20px;
+  }
+
+
+
+  footer {
+      background-color: rgb(211, 222, 240);
+      display: flex;
+      justify-content: center;
+  }
+
+  .footer-container {
+      width: 100%;
+      height: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 10px;
+
+  }
+ 
+  .social-list {
+      width: 80%;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+  }
+  
+  
+  @media screen and (max-width: 1024px){
+    .nav-links {
+        width:50%
+    }
+ 
+    .intro_div,
+    .about_heading,
+    .proj {
+         font-size: 40px;
+    }
+
+    .img_about img {
+        width: 150px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .content_about p {
+        font-size: 1rem;
+    }
+    .html{
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+    .img_about,
+    .skills {
+        display:flex;
+        justify-content: center;
+        clear: both;
+        width: 100%;
+    }
+
+    .barhtml,
+    .barcss,
+    .barjavascript,
+    .barphp,
+    .bargithub {
+        height: 14px;
+    }
+
+    .progressbar {
+        height: 12px;
+        width:300px;
+    }
+
+    div[class^='tag-']{
+        width: 75px;
+        height: 20px;
+        margin-top: 4px;
+    }
+
+    div[class^='tag-'] p {
+        
+        padding-left: 1px;
+        align-items: center;
+        font-size: 0.7rem;
+        padding-top: 3px;
+    }
+ }
+ 
+ @media screen and (max-width: 768px){
+     
+     body {
+         overflow-x: hidden;
+     }
+     .nav-links {
+         position: absolute;
+         right: 0px;
+         height: 92vh;
+         top: 8vh;
+         background-color:rgb(73, 71, 97);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 30%;
+         transform: translateX(100%);
+         transition: transform 0.1s ease-in;
+     }
+     .nav-links li {
+         opacity: 0;
+     }
+ 
+     .burger {
+         display: block;
+     }
+    
+
+     .nav-active {
+        transform: translateX(0%);
+     }
+
+    .intro {
+        width:70%;
+        height: 92vh;
+    }
+     .intro_div {
+         font-size: 30px;
+    } 
+
+     .about_heading{
+        font-size: 30px;
+    }
+
+    .content_about p {
+        font-size: 0.7rem;
+    }
+    .html {
+        margin-bottom: 10px;
+    }
+
+    .progressbar {
+        width:250px;
+    }
+    .proj {
+        font-size: 2rem;
+    }
+
+    .container_projects {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .first_project {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
