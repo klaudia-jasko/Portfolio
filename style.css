@@ -428,3 +428,10 @@ a:hover {
         margin-right: auto;
     }
 }
+
+@media screen and (max-width: 470px){
+    .progressbar {
+        height: 12px;
+        width:100px;
+    }
+}
